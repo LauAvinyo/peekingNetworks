@@ -32,7 +32,13 @@ networks. </div>
             <div class="paragraf">Indeed, there are many ways in which the different layers may be connected. We may have a layer per instant of time, in which we have the same nodes but the links may evolve dynamically- this is the case of temporal networks.  If we always have the same nodes but the connections in each layer correspond to a different kind of interaction, we are facing a multiplex- this would be the case of a public transport network, for example, in which the different layers signal the links between stations by train, bus, metro… In our attempt to generalise even further, we can even build a hyper graph, that is, a multilayer in which we may have edged that connect more than two nodes across layers (we can imagine this as a flat 2D figure delimited by each of the nodes present on the link). An example of this could be the in the representation of a company’s employees, for example, where different layers correspond to different hierarchy levels and the hyperedge encodes a department or a current project. </div>
             <div class="paragraf">The way to encode the information contained in multilayer networks isn’t unique either (for example, in the previous case of the companies we could have simply given a distinct colour to the nodes contained on each hyperedge, thus obtaining a coloured graph instead of a hypergraph), often we just try to find the most convenient alternative.</div>
             <div class="paragraf">To wrap up this brief introduction to multilayer networks let’s look at a real-life example with a bit more detail. Imagine we want to describe the evolution of the populations of rabbits and foxes over a certain region. In this model, each node is an area where these two species interact, and each layer holds the distribution and dynamics of one species. Then the interlayer connections (which will only be possible between the same node) account for the intensity of the interaction between predator and prey at that site. Say, if the location describe by a node is a plain without many places to hide, the interaction will be higher.  In this way we can study the diffusion of both species- that is, the movement of rabbits and foxes- across the region.</div>
+            
+            <img src="../images/multiplex.png" alt="multiplex" class="center"> 
+            <img src="../images/spatialMP.png" alt="spatial" class="center"> 
+            <img src="../images/coloredMP.png" alt="colored" class="center"> 
         </section> 
+        
+        
         
     </div> <!-— /.main-container-->
 </body>
