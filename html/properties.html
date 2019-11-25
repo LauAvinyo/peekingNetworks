@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang='en'>
+    
+  <head>
+    <meta charset='UTF-8' />
+    <title>PeekingNetworks</title>
+    <link rel="stylesheet" href="../css/styles.css">
+  </head>
+    
+    
+  <body>
+    <div class=”main-container”> 
+        
+        
+        <header>
+         <ul>
+          <li><a href="../html/index.html">Home</a></li>
+          <li><a href="../html/intro.html">Introduction</a></li>
+          <li><a class="active" href="../html/properties.html">Properties</a></li>
+          <li><a href="../html/multiplex.html">Multiplex</a></li>
+          <li><a href="../html/case.html">Case</a></li>
+          <li style="float:right"><a class="active" href="https://ifisc.uib-csic.es/en/">IFISC</a></li>
+         </ul> 
+        </header> 
+        
+        <section>
+            <div class="title">What is a complex network?</div>
+            <div class="paragraf">
+                In order to study the properties of the elements that complex networks represents it is necessary to characterise the network with some features. Let's see the most important ones! 
+            </div>
+            
+            <div class="subtitle">Number of nodes and links</div>
+            <div class="paragraf">
+                An obvious characterisation is the numbers of nodes and number of links of the complex network, but perhaps it won't bring a deep knowledge about the studied system, as we'll be interested in the interactions of the elements. 
+                This measure does give us a feel for the level of complexity the system may present, though, since complexity arises from the interaction of many units.
+            </div>
+            
+            <div class="subtitle">Degree of a node, degree distribution and average degree</div>
+            <div class="paragraf">
+                The degree of a node is defined as the number of links that are connected to it. In the case of directed graphs in-degree and out-degree can be considered for each node, its sum being the total degree, which corresponds to what we would obtain if the graph was undirected. Then, the degree distribution is just the sample of the degrees over all the network and the average degree is a property of the whole network.
+
+                In the particular case of a complex network, the degree distribution follows a power law. This is an expression of the fact that the phenomenon under study doesn’t have a characteristic scale. In simpler terms, the mean is meaningless because the deviation of a number from this distribution picked at random differes arbitrarily from the mean value. This is the case, for example, for an ordinary wealth distribution, be it in a country, a continent or in the whole world.
+            </div>
+            
+            <div class="subtitle">Distances between nodes and average distance</div>
+            <div class="paragraf">
+                The distance between two nodes is defined as the number of edges along the shortest path connecting them. In directed graphs each path needs to follow the direction of the arrows. Thus, in a directed graph the distance from node A to B (on an AB path) is generally
+                different from the distance from node B to A (on a BA path).
+
+                The average shortest path in real (complex) networks is short in comparison to regular networks (a 2D-lattice) but still a bit longer than in a network where the links between nodes are set randomly.
+            </div>
+            
+            <div class="subtitle">Graph diameter</div>
+            <div class="paragraf">
+                The graph diameter is defined as the maximum distance between any pair of nodes in the graph.
+                It is important to note that it is not the longest path, as the distance is computed along the shortest path the diameter will be the maximum of the shortest paths between any pair of nodes.
+            </div>
+            
+            
+            <div class="subtitle">Clustering</div>
+            <div class="paragraf">
+                In a complex network, we find that the clustering is quite high in comparison to regular and random networks.
+            </div>
+            
+        </section> 
+        
+    </div> <!-— /.main-container-->
+</body>
+
+</html>

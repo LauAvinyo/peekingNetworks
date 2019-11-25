@@ -1,0 +1,148 @@
+img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+
+.projectName{
+    text-transform: uppercase;
+    color: #EBCB74;
+    font-size: 86px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+.title{
+    text-transform: uppercase;
+    color: #EBCB74;
+    font-size: 48px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.subtitle{
+    text-transform: capitalize;
+    color: #EBCB74;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.subsubtitle{
+    text-transform: capitalize;
+    color: black;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+    line-height: 10px;
+    display: inline
+}
+
+.results{
+    text-transform: capitalize;
+    color: dimgray;
+    font-size: 16px;
+    font-family: 'Titillium Web', sans-serif;
+    text-align: left;
+    line-height: 10px;
+    display: inline
+}
+
+.my_text{
+    font-family: 'Titillium Web', sans-serif;
+    color: dimgrey;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.my_text_inline{
+    font-family: 'Titillium Web', sans-serif;
+    color: dimgrey;
+    font-size: 16px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.my_label{
+    font-family: 'Titillium Web', sans-serif;
+    color: dimgrey;
+    font-size: 16px;
+    text-align: justify;
+    display: inline-block;
+}
+
+.intro{
+    font-family: 'Titillium Web', sans-serif;
+    color: dimgrey;
+    font-size: 24px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 20px 60px;
+}   
+
+.paragraf{
+    font-family: 'Titillium Web', sans-serif;
+    color: dimgrey;
+    font-size: 18px;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 80%;
+    padding: 20px 60px;
+}   
+
+
+
+/* New CODE */
+
+.main-container{
+        font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    padding-bottom:  20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+ box-sizing: border-box;
+}*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #808080;
+}
