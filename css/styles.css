@@ -8,6 +8,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   width: 500px;
+  padding-bottom: 50px;
 }
 
 
@@ -31,30 +32,19 @@ img {
 .subtitle{
     text-transform: capitalize;
     color: #EBCB74;
-    font-size: 20px;
+    font-size: 28px;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
 
 .subsubtitle{
-    text-transform: capitalize;
-    color: black;
-    font-size: 16px;
+    text-transform: uppercase;
+    color: slategray;
+    font-size: 18px;
     font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    line-height: 10px;
-    display: inline
+    text-align: center;
 }
 
-.results{
-    text-transform: capitalize;
-    color: dimgray;
-    font-size: 16px;
-    font-family: 'Titillium Web', sans-serif;
-    text-align: left;
-    line-height: 10px;
-    display: inline
-}
 
 .my_text{
     font-family: 'Titillium Web', sans-serif;
@@ -95,7 +85,7 @@ img {
     font-size: 18px;
     text-align: justify;
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 68%;
     padding: 20px 60px;
 }   
 
