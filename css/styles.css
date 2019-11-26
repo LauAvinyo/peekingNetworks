@@ -46,31 +46,8 @@ img {
 }
 
 
-.my_text{
-    font-family: 'Titillium Web', sans-serif;
-    color: dimgrey;
-    font-size: 16px;
-    text-align: justify;
-}
-
-.my_text_inline{
-    font-family: 'Titillium Web', sans-serif;
-    color: dimgrey;
-    font-size: 16px;
-    text-align: justify;
-    display: inline-block;
-}
-
-.my_label{
-    font-family: 'Titillium Web', sans-serif;
-    color: dimgrey;
-    font-size: 16px;
-    text-align: justify;
-    display: inline-block;
-}
-
 .intro{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Calibri', sans-serif;
     color: dimgrey;
     font-size: 24px;
     text-align: justify;
@@ -80,7 +57,7 @@ img {
 }   
 
 .paragraf{
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Calibri', sans-serif;
     color: dimgrey;
     font-size: 18px;
     text-align: justify;

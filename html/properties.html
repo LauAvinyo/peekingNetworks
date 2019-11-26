@@ -27,7 +27,11 @@
             <div class="title">What is a Network?</div>
             
             <div class="paragraf">
-                Blablabla definition of a network.
+                All the phenomena descrived in the introducion have something in common: they are build from individual elements that interact between them. For instance, in the explosion of a meme, each element is a person and their communication, one saying to the other that should check that out that meme is the interaction. To model that situation we use networks. <br>
+                This type of graph is defined as a set of nodes, also called vertices connected (or not) by a collection of edges, also called links. In this framework, a node could represent any kind of object, from individuals to places or even abstract concepts. The links between them, on the other hand, respond to the relationship the pair of nodes in question holds. This interactions can have a particullar direction, be undirected or take both directions. Moreover, they can also represent interactions with itself, called self loops. <br>
+                Finally, they also generate structures. One exemple are paths, the set of edges one can take in order to move from one node to another. The closed paths, ie. you can comeback to the first node without going backwards, may be called cycles.
+                
+                
             </div>
             <img src="../images/network.png" alt="network" class="center">
             
@@ -36,13 +40,12 @@
             <div class="subtitle">Properties</div>
             
             <div class="paragraf">
-                In order to study the properties of the elements that complex networks represents it is necessary to characterise the network with some features. Let's see the most important ones! 
+                In order to study and understand the phenomenas that the networks represents it is necessary to characterise the network with some features. Let's see the most important ones! 
             </div>
             <div class="subsubtitle">Number of nodes and links</div>
             
             <div class="paragraf">
-                An obvious characterisation is the numbers of nodes and number of links of the complex network, but perhaps it won't bring a deep knowledge about the studied system, as we'll be interested in the interactions of the elements. 
-                This measure does give us a feel for the level of complexity the system may present, though, since complexity arises from the interaction of many units.
+                An obvious characterisation is the numbers of nodes and number of links of the complex network, but perhaps it won't bring a deep knowledge about the studied system, as we'll be interested in the interactions of the elements. This measure does give us a feel for the level of complexity the system may present, though, since complexity arises from the interaction of many units. On a more technical level, it allows us to get a sense of computational complexity, that is the time it may take to run algorithms or simulations on a given network.
             </div>
             
             <div class="subsubtitle">Degree of a node</div>
@@ -54,30 +57,25 @@
             
             <div class="subsubtitle">Degree distribution and average degree</div>
             <div class="paragraf">
-                Then, the degree distribution is just the sample of the degrees over all the network and the average degree is a property of the whole network.
+                After computing the degree for each node of the network onw can visualize its destribution. This allow us to know which is the mean degree, the dispersion and the overall shape of the number of degree on a global level. For instance, some networks have the same degree for each node, in others more or less all of the nodes have a degree around the mean dregree and in some of the networks is rather impossible to predict the degree! But for now let's see a simple exemple.
             </div>
             <img src="../images/degreeDistribution.png" alt="degreeDistr" class="center">
   
             
             <div class="subsubtitle">Distances between nodes, average distance and Graph diameter</div>
             <div class="paragraf">
-                The distance between two nodes is defined as the number of edges along the shortest path connecting them. In directed graphs each path needs to follow the direction of the arrows. Thus, in a directed graph the distance from node A to B (on an AB path) is generally
-                different from the distance from node B to A (on a BA path).
+                The distance between two nodes is defined as the number of edges along the shortest path connecting them. In directed graphs each path needs to follow the direction of the arrows. Thus, in a directed graph the distance from node A to B (on an AB path) is generally different from the distance from node B to A (on a BA path).
                 <img src="../images/shortesPath.png" alt="shortpath" class="center"> 
-                The average shortest path in real (complex) networks is short in comparison to regular networks (a 2D-lattice) but still a bit longer than in a network where the links between nodes are set randomly.
-                The graph diameter is defined as the maximum distance between any pair of nodes in the graph.
-                It is important to note that it is not the longest path, as the distance is computed along the shortest path the diameter will be the maximum of the shortest paths between any pair of nodes.
+                The average shortest path in real (complex) networks is short in comparison to regular networks (a 2D-lattice) but still a bit longer than in a network where the links between nodes are set randomly. The graph diameter is defined as the maximum distance between any pair of nodes in the graph. It is important to note that it is not the longest path, as the distance is computed along the shortest path the diameter will be the maximum of the shortest paths between any pair of nodes.
             </div>
             
-            <div class="subsubtitle">Clique, components and motifs.</div>
+            <div class="subsubtitle">Clustering</div>
             <div class="paragraf">
-                
+                Some of the nodes are more connected with a given set of nodes, probably their neightbours and have weak connections or even not being connected at all with the farthest nodes. This allows the network to create some structures. One of them are the componets. We can thing about them as sub-graphs, not connected between them that are part of the same network. There are also cliques, in such a structure all nodes are connected to all! We could also take a look on how are the nodes connected. Sometimes, the exact same connection pattern appears more than one in a network. Those are called motivs. 
             </div>
             <img src="../images/clusters.png" alt="clusters" class="center"> 
-            
-             <div class="subsubtitle">Clustering</div>
             <div class="paragraf">
-                In a complex network, we find that the clustering is quite high in comparison to regular and random networks.
+                To have a sense about the level of connection of a particular node on a local level there are some measure we can compute. One of them is called local clustering coefficient. This measure with a non-super original name provides a realible measure of the connectivity surrounding the node in question, thus giving some information about the relative relevance of the node in the connectivity of the structure.
             </div>
             <img src="../images/clustering.png" alt="clustering" class="center"> 
             
