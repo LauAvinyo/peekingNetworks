@@ -3,6 +3,8 @@ img {
     max-height: auto;
 }
 
+.align-center {text-align: center; margin: auto; width: 800px}
+
 .center {
   display: block;
   margin-left: auto;
