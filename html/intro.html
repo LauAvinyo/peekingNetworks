@@ -35,12 +35,24 @@
 
             <div class="subtitle">Examples</div>
             <div class="paragraf">
-                 Bla bla. 
+                To visualize all these concepts we can take a look to a real case example!
+                We will take a look to a regulatory networks (involving metabolic reactions, protein-protein interactions, gene regulation, ...). More concretly we will work with transcription factor networks, which can usually be treated as directed simple graphs. We will use the **RegulonDB** database, which contains most known gene regulatory interactions in Escherichia coli. The data can be freely accessed in the [RegulonDB website](http://regulondb.ccg.unam.mx/).
+                
+                This network has 1869 nodes and 4284 edges. And it is compossed by 25 different components, however, the largest component is composed by 95% of the nodes. For simplicity we will work with only this component. 
+                
+                First of all, it is always a good practice to visualize the graph:
             </div>
             
             <img src="../images/ecoli.svg" alt="ecoli" class="ecoli"> 
+            
+            <div class="paragraf">
+                It seems that some nodes have a high number of conections while most of them only have one. This seems to behave like a power law. Let's plot the degree distribution then. And eventhough is far from being a perfect power law, it seems that the regulatory network of these bacteria seems a Barabasi and Albert network. One interesting property to compute here is the mean. If this network was a random one the mean would be found around 2 * number of edges / number of nodes, in these case 4.58, but, empirically it is 35.26. As discussed above the mean on power law distributions is rather meaningless, but, is cool to see that the mean is not the one we would expect if it was another type of network. 
+            </div>
             <img src="../images/ecoli_hist.svg" alt="ecolihist" class="ecoli"> 
 
+            <div class="paragraf">
+                We can compute other characteristics, for instance the Clustering coefficient is 14.82 and the Characteristic Path Len 3.61. Overall we can conclude that the transcription factor regulatory network of E.Coli is composed by some pretty important Transcription factors, with tones of edges connecting to it. These are indeed the ones that allow us to have such a short average path lengnth. And a bunch (most of them) of not important transcription factors. That, indeed, is quite convinient for the bacteria, because a random mutation or failure of a protein will almost certantly not be lethal for it.
+            </div>
 
             
         </section> 
