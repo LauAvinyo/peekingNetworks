@@ -16,10 +16,10 @@
         <header>
          <ul>
           <li><a href="../index.html">Home</a></li>
-          <li><a class="active" href="../html/properties.html">Networks Introduction</a></li>
-          <li><a href="../html/intro.html">Complex Networks</a></li>
-          <li><a href="../html/multiplex.html">Multiplex Networks</a></li>
-          <li><a href="../html/case.html">Multiplex Networks</a></li>
+          <li><a href="../html/intro.html">Introduction</a></li>
+          <li><a class="active" href="../html/properties.html">Networks</a></li>
+          <li><a href="../html/multiplex.html">Multiplex</a></li>
+          <li><a href="../html/case.html">Case</a></li>
           <li style="float:right"><a class="active" href="https://ifisc.uib-csic.es/en/">IFISC</a></li>
          </ul> 
         </header> 
@@ -96,13 +96,13 @@
             
                 <div class="subsubtitle">Random networks</div>
                 <div class="paragraf">
-                    This sort of networkis the next simplest form a network. To construct such a model one needs to create a number of nodes and connect them with a given probability. Boom! That is all. Although it has been used extensively in the network field due to its simplicity is not a good model for real life phenomena. However,it is commonly used as a benchmark or baseline model.
+                    This sort of network, also called @@, is the next simplest form a network. To construct such a model one needs to create a number of nodes and connect them with a given probability. Boom! That is all. Although it has been used extensively in the network field due to its simplicity is not a good model for real life phenomena. However,it is commonly used as a benchmark or baseline model.
                 </div>
                 <img src="../images/randomNet.png" alt="clustering" class="boundle"> 
             
             <div class="subsubtitle">Small world networks</div>
                 <div class="paragraf">
-                    In 1998 Stg and Wts published a paper where they discussed that there may be a better model to describe phenomenas than the networks discused above. They argue that real life networks have path lenght while having a high connectivity. Moreover, they presented an algorithm, ie the steps, to generate this sort of model. One variation of these process could be:
+                    In 1998 Stg and Wts published a paper where they discussed that there may be a better model to describe phenomenas than the networks discused above. They argue that real life networks have low @@ while having a high @@. Moreover, they presented an algorithm, ie the steps, to generate this sort of model. One variation of these process could be:
                     <ol>
                         <li>Generate a regular ring with n nodes and k connected neighbours.</li><br>
                         <li>Pick an edge</li><br>
@@ -113,22 +113,18 @@
                           </ol> 
                         <li>Repite for each unvisited edge</li><br>
                       </ol> 
-                    This sort of networks has been shown to be really good at representing some real phenomena. 
+                    This sort of networks has been shown to be really good at representing some real phenomena. @@
                 </div>
                 <img src="../images/smallWorld.png" alt="clustering" class="boundle"> 
             
             <div class="subsubtitle">Preferental attachment networks</div>
                 <div class="paragraf">
-                    Finally, it turned out as Barabatzi and Alber pointed out, that some nets behaive still different than all the network types explained above. In this phenomena some nodes have tones of edges while most of them have few number of edges. This explains quite companies relationships network. Some big ones as Google or Nestle, have a hughe number of edges, but, most of the companies, that are small, have few relations with others. To construct this nets one can use the following recipe.
+                    Finally, it turned out as @@ pointed out, that some @@ behaive still different than all the network types explained above. In this phenomena some nodes have tones of edges while most of them have few number of edges. This explains quite companies relationships network. Some big ones as Google or Nestle, have a hughe number of edges, but, most of the companies, that are small, have few relations with others. To construct this nets one can use the following recipe.
                     <ol>
-                        <li></li><br>
-                        <li>Pick an edge</li><br>
-                        <ol>
-                            <li>Wt edges</li><br>
-                            <li>Choose y.</li><br>
-                            <li>Randomly nd.</li><br>
-                          </ol> 
-                        <li>Repite edge</li><br>
+                        <li>Start with m0 randomly connected nodes.</li><br>
+                        <li>Add a new node to m current nodes (m smaller or equal to m0) with a probability proportional to their degree.  </li><br>
+                        <li>Repeat the previous step </li><br>
+                        
                       </ol> 
                 </div>
                 <img src="../images/preferential.png" alt="clustering" class="boundle"> 
