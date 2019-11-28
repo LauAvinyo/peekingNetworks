@@ -27,7 +27,7 @@
         <section>
             <div class="title"> Example of a real network: a study from beginning to end</div>
             <div class="paragraf">To illustrate the ideas we presented in the previous sections, we will now take a look at an experiment of our own. With the aim of generating a multiplex network, we made an anonymous questionnaire and distributed it around two different sets of people.  This survey included some questions about general preferences (music taste, hobbies, preferred art, eating habits…), some about political opinion and religious beliefs, and some random ones (duck or penguin, pen or pencil, digimon or pokemon…). We built the multiplex in the following way: each question corresponds to a different layer, the nodes are the same across all layers, since one corresponds to each person, and a link is formed between nodes when they have provided the same answer.
-              The first group of people we distributed the questionnaire to were the PhD and Master students at IFISC, generating what we will call the IFISC network. From this experiment we obtained a set of 24 nodes, which we expect to be more similar to each other since we all share some interests in relation to our field of study. 
+              The first group of people we distributed the questionnaire to were the PhD and Master students at IFISC, generating what we will call the IFISC network. From this experiment we obtained a set of 24 nodes, which we expected to be more similar to each other since we all share some interests in relation to our field of study. 
             </div>
             <img src="../images/Choose%20the%20movie%20genre%20you%20identify%20with%20the%20mostnetwork_ifisc.svg" alt="clustering" class="center">
             <div class="paragraf">    
@@ -70,6 +70,8 @@
             <img src="../images/rand_questions.svg">
             </div>
             
+            <div class="paragraf">The last two matrices showed the Hamming distance between questions obtained for the IFISC (upper image) and random (lower image) networks. We observe that the larger subject pool of the random network reveals a structure of correlations among questions that the limited statistics of the IFISC network were not able to capture.</div>
+
                         <div class="align-center">
             <img src="../images/ifisc_people.svg">
             </div>
@@ -77,9 +79,6 @@
             <img src="../images/rand_people.svg">
             </div>
             
-            
-
-
 
             <div class="paragraf">Finally, we tried to look for different communities with PCA (Principal Components Analysis), a machine learning algorithm that builds two orthogonal axes from all the properties that characterise the nodes such that de deviation among them is maximised. It then projects these nodes into the plane described by the orthogonal axes. The result of this transformation is that we see the nodes with similar properties closer together in the plane. In this way we expected to see some separated clusters, but unfortunately neither in our IFISC network nor in the random one did we manage to isolate communities.
             </div>
